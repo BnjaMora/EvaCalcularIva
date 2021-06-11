@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".Calculo">
+
+    <!--txtTitutlo (Aplicacion Productos)-->
+
+    <!--aqui se ingresa dato-->
+
+    <!--aqui se ingresa dato-->
+
+    <!--aqui se ingresa dato-->
+
+    <!--aqui al hacer clic se  enviaran los datos ingresados hacia los parametros establecidos-->
+
+    <!-- aqui recibe el dato ingresado-->
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/txtTitulo"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtValorBrutoR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtNetoR"
+        app:layout_constraintTop_toBottomOf="@+id/txtNetoR"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/txtNetoR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtMarcaR"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarcaR"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/txtMarcaR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtNombreR"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreR"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/txtNombreR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtCodigoR"
+        app:layout_constraintTop_toTopOf="@+id/txtCodigoR"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/txtCodigoR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarca"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/txtMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/txtMarca"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtNeto"
+        app:layout_constraintTop_toBottomOf="@+id/txtNeto" />
+
+    <EditText
+        android:id="@+id/txtNeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/txtNeto"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/txtNombre"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigo" />
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/txtCodigo"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#9C27B0"
+        android:onClick="calcularIVA"
+        android:text="@string/btnCalcular"
+        android:textAlignment="center"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCodigoR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- aqui recibe el dato ingresado-->
+
+    <!-- aqui recibe el dato ingresado-->
+
+    <!-- aqui recibe el dato ingresado-->
+
+    <!-- aqui recibe el dato ingresado-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Registrar</string>
+    <string name="content_img_splash">img_splash</string>
+    <string name="txtTitulo">Aplicacion Productos</string>
+    <string name="txtCodigo">Ingrese Código</string>
+    <string name="txtNombre">Ingrese Nombre</string>
+    <string name="txtMarca">Ingrese Marca</string>
+    <string name="txtNeto">Ingrese Valor Neto</string>
+    <string name="btnCalcular">Calcular</string>
+</resources>
